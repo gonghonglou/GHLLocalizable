@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  GHLLocalizable
+
+  Created by gonghonglou on 2018/3/14.
+  Copyright © 2018年 Troy. All rights reserved.
+*/
+
+"下一页" = "Next Page";
+"这是一段本地化语言的文字" = "This is a text of a localised language";

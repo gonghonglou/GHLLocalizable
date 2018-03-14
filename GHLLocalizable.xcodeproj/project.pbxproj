@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75FE8DA820597CBB0045B4B0 /* GHLLocalizable.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FE8DA620597CBB0045B4B0 /* GHLLocalizable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75FE8DB220597D4E0045B4B0 /* GHLLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE8DAE20597D4E0045B4B0 /* GHLLocalizable.m */; };
+		75FE8DB320597D4E0045B4B0 /* NSBundle+GHLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE8DAF20597D4E0045B4B0 /* NSBundle+GHLLanguage.m */; };
+		75FE8DB420597D4E0045B4B0 /* NSBundle+GHLLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FE8DB020597D4E0045B4B0 /* NSBundle+GHLLanguage.h */; };
+		75FE8DB520597D4E0045B4B0 /* GHLLocalizable.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FE8DB120597D4E0045B4B0 /* GHLLocalizable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75FE8DA320597CBB0045B4B0 /* GHLLocalizable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GHLLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75FE8DA620597CBB0045B4B0 /* GHLLocalizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHLLocalizable.h; sourceTree = "<group>"; };
 		75FE8DA720597CBB0045B4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FE8DAE20597D4E0045B4B0 /* GHLLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHLLocalizable.m; sourceTree = "<group>"; };
+		75FE8DAF20597D4E0045B4B0 /* NSBundle+GHLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+GHLLanguage.m"; sourceTree = "<group>"; };
+		75FE8DB020597D4E0045B4B0 /* NSBundle+GHLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+GHLLanguage.h"; sourceTree = "<group>"; };
+		75FE8DB120597D4E0045B4B0 /* GHLLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLLocalizable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,10 @@
 		75FE8DA520597CBB0045B4B0 /* GHLLocalizable */ = {
 			isa = PBXGroup;
 			children = (
-				75FE8DA620597CBB0045B4B0 /* GHLLocalizable.h */,
+				75FE8DB120597D4E0045B4B0 /* GHLLocalizable.h */,
+				75FE8DAE20597D4E0045B4B0 /* GHLLocalizable.m */,
+				75FE8DB020597D4E0045B4B0 /* NSBundle+GHLLanguage.h */,
+				75FE8DAF20597D4E0045B4B0 /* NSBundle+GHLLanguage.m */,
 				75FE8DA720597CBB0045B4B0 /* Info.plist */,
 			);
 			path = GHLLocalizable;
@@ -59,7 +68,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FE8DA820597CBB0045B4B0 /* GHLLocalizable.h in Headers */,
+				75FE8DB420597D4E0045B4B0 /* NSBundle+GHLLanguage.h in Headers */,
+				75FE8DB520597D4E0045B4B0 /* GHLLocalizable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FE8DB320597D4E0045B4B0 /* NSBundle+GHLLanguage.m in Sources */,
+				75FE8DB220597D4E0045B4B0 /* GHLLocalizable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
