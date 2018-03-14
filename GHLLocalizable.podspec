@@ -14,4 +14,6 @@ s.requires_arc = true
 s.source_files = 'GHLLocalizable/*.{h,m}'
 s.public_header_files = 'GHLLocalizable/*.{h}'
 
+s.framework  = "Foundation"
+
 end
