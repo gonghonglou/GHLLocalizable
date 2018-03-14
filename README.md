@@ -1,5 +1,4 @@
 # GHLLocalizable
 
-iOS 应用程序内语言设置
-
+iOS 应用内语言设置工具
 
