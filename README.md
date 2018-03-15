@@ -17,42 +17,45 @@ iOS 应用内语言设置工具
 
 ## 应用内语言设置
 
-接下来要做的就是使用 GHLLocalizable 获取软件语言、设置语言、监听语言改变等操作。
+使用 [GHLLocalizable](https://github.com/gonghonglou/GHLLocalizable) 获取软件语言、设置语言、监听语言改变等操作。
 
-1、在 `AppDelegate` 的 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 方法里初始化该工具类，并监听通知：
+1、初始化该工具类，比如在 `AppDelegate` 的 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 方法里：
 ```
-// 语言初始化
 [GHLLocalizableController initUserLanguage];
-// 监控语言切换
-[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChange:) name:GHLNotificationLanguageChanged object:nil];
 ```
 
-2、记得在 `- (void)applicationWillTerminate:(UIApplication *)application`方法里删除通知：
-```
-[[NSNotificationCenter defaultCenter] removeObserver:self name:GHLNotificationLanguageChanged object:nil];
-```
-
-3、实现通知方法：
-```
-- (void)languageChange:(NSNotification *)note {
-    // 在该方法里实现重新初始化 rootViewController 的行为，并且所有带有文字的页面都要重新渲染
-    // 比如：[UIApplication sharedApplication].keyWindow.rootViewController = ...;
-}
-```
-
-4、使用 `NSLocalizedString(<#key#>, <#comment#>)`方法 给所有文字添加本地化语言方法：
-```
-label.text = NSLocalizedString(@"这是一段本地化语言的文字", nil);
-...
-```
-
-5、更改语言方法：
+2、更改语言方法：
 ```
 // 设置中文
 [GHLLocalizable setUserlanguage:GHLChinese_Hans];
 
 // 设置英文
-[GHLLocalizable setUserlanguage:GHLEnglish];
+[GHLLocalizable setUserlanguage:GHL_English];
+```
+
+3、使用 `NSLocalizedString(<#key#>, <#comment#>)`方法 给所有文字添加本地化语言方法：
+```
+label.text = NSLocalizedString(@"这是一段本地化语言的文字", nil);
+...
+```
+
+4、监听语言更改通知：
+```
+// 监控语言切换
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChange:) name:GHLNotificationLanguageChanged object:nil];
+```
+
+记得删除通知，比如在 `- (void)applicationWillTerminate:(UIApplication *)application`方法里：
+```
+[[NSNotificationCenter defaultCenter] removeObserver:self name:GHLNotificationLanguageChanged object:nil];
+```
+
+5、实现通知方法：
+```
+- (void)languageChange:(NSNotification *)note {
+    // 在该方法里实现重新初始化 rootViewController 的行为，并且所有带有文字的页面都要重新渲染
+    // 比如：[UIApplication sharedApplication].keyWindow.rootViewController = ...;
+}
 ```
 
 # 安装
