@@ -15,9 +15,6 @@ iOS 应用内语言设置工具
 
 默认你已经完成了对工程本地化语言的配置，如果没有，请参考我的博客文章：[iOS应用程序语言本地化及应用内语言设置（二）](http://gonghonglou.com/2018/03/14/set-language-2/)
 
-## 应用内语言设置
-
-使用 [GHLLocalizable](https://github.com/gonghonglou/GHLLocalizable) 获取软件语言、设置语言、监听语言改变等操作。
 
 1、初始化该工具类，比如在 `AppDelegate` 的 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 方法里：
 ```
@@ -36,12 +33,10 @@ iOS 应用内语言设置工具
 3、使用 `NSLocalizedString(<#key#>, <#comment#>)`方法 给所有文字添加本地化语言方法：
 ```
 label.text = NSLocalizedString(@"这是一段本地化语言的文字", nil);
-...
 ```
 
 4、监听语言更改通知：
 ```
-// 监控语言切换
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChange:) name:GHLNotificationLanguageChanged object:nil];
 ```
 
