@@ -19,8 +19,6 @@ iOS 应用内语言设置工具
 
 接下来要做的就是使用 GHLLocalizable 获取软件语言、设置语言、监听语言改变等操作。
 
-使用方法：
-
 1、在 `AppDelegate` 的 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 方法里初始化该工具类，并监听通知：
 ```
 // 语言初始化
