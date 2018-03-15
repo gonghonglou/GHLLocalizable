@@ -26,11 +26,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray *languages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
-    for (NSString *str in languages) {
-        NSLog(@"------%@", str);
-    }
-    
     [GHLLocalizable initUserLanguage];
     
     self.chineseButton = [self createButtonWithTitle:NSLocalizedString(@"中文版", nil)
@@ -68,9 +63,6 @@
 }
 
 - (void)clickNextButton {
-    
-    NSLog(@"--%@", [GHLLocalizable userLanguage]);
-    
     NextViewController *nextVC = [NextViewController new];
     [self.navigationController pushViewController:nextVC animated:YES];
 }

@@ -10,6 +10,11 @@
 
 @interface NSBundle (GHLLanguage)
 
+/**
+ * 设置当前语言
+ *
+ * @param language 当前语言字符串形式
+ */
 + (void)setLanguage:(NSString *)language;
 
 @end
