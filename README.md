@@ -8,7 +8,7 @@ iOS 应用内语言设置工具
 [![Build Status](https://travis-ci.org/gonghonglou/GHLLocalizable.svg?branch=master)](https://travis-ci.org/gonghonglou/GHLLocalizable)
 
 
-# Demo 工程
+# Demo
 请查看 `Example/GHLLocalizable.xcodeproj` 目录下示例工程
 
 # 使用方法
