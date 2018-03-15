@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "GHLLocalizable"
   s.summary      = "For international control."
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "gonghonglou" => "gonghonglou@gmail.com" }
   s.social_media_url = 'http://gonghonglou.com'
