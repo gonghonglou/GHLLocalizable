@@ -52,7 +52,7 @@ label.text = NSLocalizedString(@"这是一段本地化语言的文字", nil);
 [GHLLocalizable setUserlanguage:GHLChinese_Hans];
 
 // 设置英文
-[GHLLocalizable setUserlanguage:GHL_English];
+[GHLLocalizable setUserlanguage:GHLEnglish];
 ```
 
 # 安装

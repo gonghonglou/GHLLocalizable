@@ -56,7 +56,7 @@
 }
 
 - (void)clickEnglishButton {
-    [GHLLocalizable setUserlanguage:GHL_English];
+    [GHLLocalizable setUserlanguage:GHLEnglish];
 
     [self didSelectStyle:self.englishButton];
     [self didDeselectStyle:self.chineseButton];

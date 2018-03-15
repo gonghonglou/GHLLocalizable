@@ -13,7 +13,7 @@
 // 繁体中文
 #define GHLChinese_Hant @"zh-Hant"
 // 英文
-#define GHL_English     @"en"
+#define GHLEnglish      @"en"
 
 #define GHLNotificationLanguageChanged  @"languageChanged"
 
