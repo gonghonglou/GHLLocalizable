@@ -13,7 +13,7 @@ iOS 应用内语言设置工具
 
 # 使用方法
 
-默认你已经完成了对工程本地化语言的配置，如果没有，请参考我的博客文章：[iOS应用程序语言本地化及应用内语言设置（二）](http://gonghonglou.com/2018/03/14/set-language-2/)
+默认你已经完成了对工程本地化语言的配置，如果没有，请参考我的博客文章：[GHLLocalizable：iOS应用内语言设置工具](http://gonghonglou.com/2018/03/14/GHLLocalizable/)
 
 
 1、初始化该工具类，比如在 `AppDelegate` 的 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 方法里：
