@@ -18,7 +18,6 @@ static const NSString *GHLBundleKey = @"GHLLanguageKey";
 @implementation BundleEx
 
 - (NSString *)localizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName {
-    
     NSBundle *bundle = objc_getAssociatedObject(self, &GHLBundleKey);
     if (bundle) {
         return [bundle localizedStringForKey:key value:value table:tableName];
