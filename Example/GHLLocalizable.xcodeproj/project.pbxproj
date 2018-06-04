@@ -16,8 +16,8 @@
 		75DA354920592A7600DCBDED /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DA354820592A7600DCBDED /* NextViewController.m */; };
 		75DA355320592E8D00DCBDED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75DA355520592E8D00DCBDED /* Localizable.strings */; };
 		75DA355B205930B500DCBDED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75DA355D205930B500DCBDED /* InfoPlist.strings */; };
-		75FC5FD020C4E1EE00325FFF /* NSBundle+GHLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC5FCD20C4E1EE00325FFF /* NSBundle+GHLLanguage.m */; };
-		75FC5FD120C4E1EE00325FFF /* GHLLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC5FCF20C4E1EE00325FFF /* GHLLocalizable.m */; };
+		75FC5FD620C4E38800325FFF /* NSBundle+GHLLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC5FD320C4E38700325FFF /* NSBundle+GHLLanguage.m */; };
+		75FC5FD720C4E38800325FFF /* GHLLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC5FD520C4E38700325FFF /* GHLLocalizable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +39,10 @@
 		75DA355620592E9F00DCBDED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75DA355C205930B500DCBDED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		75DA355E205930B700DCBDED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		75FC5FCC20C4E1EE00325FFF /* GHLLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHLLocalizable.h; path = ../../../GHLLocalizable/GHLLocalizable.h; sourceTree = "<group>"; };
-		75FC5FCD20C4E1EE00325FFF /* NSBundle+GHLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+GHLLanguage.m"; path = "../../../GHLLocalizable/NSBundle+GHLLanguage.m"; sourceTree = "<group>"; };
-		75FC5FCE20C4E1EE00325FFF /* NSBundle+GHLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+GHLLanguage.h"; path = "../../../GHLLocalizable/NSBundle+GHLLanguage.h"; sourceTree = "<group>"; };
-		75FC5FCF20C4E1EE00325FFF /* GHLLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHLLocalizable.m; path = ../../../GHLLocalizable/GHLLocalizable.m; sourceTree = "<group>"; };
+		75FC5FD220C4E38700325FFF /* GHLLocalizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHLLocalizable.h; path = ../../../GHLLocalizable/GHLLocalizable.h; sourceTree = "<group>"; };
+		75FC5FD320C4E38700325FFF /* NSBundle+GHLLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+GHLLanguage.m"; path = "../../../GHLLocalizable/NSBundle+GHLLanguage.m"; sourceTree = "<group>"; };
+		75FC5FD420C4E38700325FFF /* NSBundle+GHLLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+GHLLanguage.h"; path = "../../../GHLLocalizable/NSBundle+GHLLanguage.h"; sourceTree = "<group>"; };
+		75FC5FD520C4E38700325FFF /* GHLLocalizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHLLocalizable.m; path = ../../../GHLLocalizable/GHLLocalizable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +96,10 @@
 		75FC5FCB20C4E1DB00325FFF /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				75FC5FCC20C4E1EE00325FFF /* GHLLocalizable.h */,
-				75FC5FCF20C4E1EE00325FFF /* GHLLocalizable.m */,
-				75FC5FCE20C4E1EE00325FFF /* NSBundle+GHLLanguage.h */,
-				75FC5FCD20C4E1EE00325FFF /* NSBundle+GHLLanguage.m */,
+				75FC5FD220C4E38700325FFF /* GHLLocalizable.h */,
+				75FC5FD520C4E38700325FFF /* GHLLocalizable.m */,
+				75FC5FD420C4E38700325FFF /* NSBundle+GHLLanguage.h */,
+				75FC5FD320C4E38700325FFF /* NSBundle+GHLLanguage.m */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FC5FD020C4E1EE00325FFF /* NSBundle+GHLLanguage.m in Sources */,
+				75FC5FD620C4E38800325FFF /* NSBundle+GHLLanguage.m in Sources */,
 				75DA3536205929FA00DCBDED /* ViewController.m in Sources */,
-				75FC5FD120C4E1EE00325FFF /* GHLLocalizable.m in Sources */,
+				75FC5FD720C4E38800325FFF /* GHLLocalizable.m in Sources */,
 				75DA354920592A7600DCBDED /* NextViewController.m in Sources */,
 				75DA3541205929FA00DCBDED /* main.m in Sources */,
 				75DA3533205929FA00DCBDED /* AppDelegate.m in Sources */,
