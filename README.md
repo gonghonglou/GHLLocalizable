@@ -27,7 +27,7 @@ iOS 应用内语言设置工具
 [GHLLocalizable setUserlanguage:GHLChinese_Hans];
 
 // 设置英文
-[GHLLocalizable setUserlanguage:GHL_English];
+[GHLLocalizable setUserlanguage:GHLEnglish];
 ```
 
 3、使用 `NSLocalizedString(<#key#>, <#comment#>)`方法 给所有文字添加本地化语言方法：
