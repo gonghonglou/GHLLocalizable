@@ -65,5 +65,5 @@ label.text = NSLocalizedString(@"这是一段本地化语言的文字", nil);
 3. 引用 `GHLLocalizable.h` 头文件。
 
 # License
-DJLSplitCollectionView is provided under the MIT license. See LICENSE file for details.
+GHLLocalizable is provided under the MIT license. See LICENSE file for details.
 
