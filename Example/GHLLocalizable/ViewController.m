@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "GHLLocalizable.h"
+#import <CHLLocalizable/GHLLocalizable.h>
 #import "NextViewController.h"
 
 @interface ViewController ()
