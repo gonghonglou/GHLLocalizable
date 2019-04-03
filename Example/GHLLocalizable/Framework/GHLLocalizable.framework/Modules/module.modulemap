@@ -1,0 +1,6 @@
+framework module GHLLocalizable {
+  umbrella header "GHLLocalizable.h"
+
+  export *
+  module * { export * }
+}
